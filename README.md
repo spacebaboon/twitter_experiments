@@ -35,3 +35,18 @@ node searchfor "justin bieber"
 ```
 this will run continuously. press ctrl-c to stop.
 
+
+### Search for tweets with given location
+
+to search for tweets including a single word which have a given location, run
+```shell
+node findlocatedtweets Obama
+```
+this will run continuously. press ctrl-c to stop.
+unfortunately, the streaming API does not currently allow both a search phrase and location to be specified at the same time.
+you can, but the logic is such that tweets matching EITHER the phrase OR having location are found.
+this script finds all tweets with location, then filters for those matching the search term.
+this is horribly inefficient in terms of bandwidth.
+an alternative approach would be to do the reverse: bring back tweets matching, then filter on those with specified location in the data.
+which is more bandwidth efficient would depend on the number of tweets matching the search term. only a relatively small number have specified location.
+a trending term would probably return more than all tweets with location.
