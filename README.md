@@ -28,7 +28,7 @@ to search for tweets with given content, run e.g.
 ```shell
 node searchfor armadillo pangolin echidna
 ```
-to find cheesy tweets, along with their author's details. tweets with any of the words will be returned.
+to find tweets mentioning these creatures, along with the author's name. tweets with any of the words will be returned.
 to search for tweets with all of a given set of words, surround the parameter list with quotes, e.g.
 ```shell
 node searchfor "justin bieber"
