@@ -1,7 +1,7 @@
 'use strict';
 
-var logger = require('./logger');
-var twitFactory = require('./twitFactory');
+var logger = require('./lib/logger');
+var twitFactory = require('./lib/twitFactory');
 var twit = twitFactory.twit();
 
 twit.stream('statuses/sample', function (stream) {
