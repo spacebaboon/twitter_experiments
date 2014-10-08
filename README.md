@@ -1,5 +1,6 @@
 Experiments with Twitter APIs and node.js
 =========================================
+Simple mucking about examples with node and Twitter using the twitter node package https://www.npmjs.org/package/twitter
 
 ## Installlation
 ```shell
