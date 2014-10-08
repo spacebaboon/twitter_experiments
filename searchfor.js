@@ -6,7 +6,7 @@ var twit = twitFactory.twit();
 
 if (process.argv.length < 3) {
     console.log('you must enter search word(s) or a phrase.');
-    console.log('$ node searchfor stilton camambert feta');
+    console.log('$ node searchfor stilton camembert feta');
     console.log(' will find tweets containing any of these words.');
     console.log('$ node searchfor "justin bieber"');
     console.log(' will find tweets containing all the words, but not necessarily in the given order.');
