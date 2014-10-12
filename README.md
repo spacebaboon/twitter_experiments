@@ -55,16 +55,16 @@ a trending term would probably return more than all tweets with location.
 
 ### Plot location-based tweets on a Gmap
 ```shell
-node mapserver
+node mapserver <search word>
 ```
-this starts up a Node Express server, which streams tweets matching a fixed term (currently 'ebola') and serves it over a websocket to a page where a Google Map renders all new tweets with location.
+this starts up a Node Express server, which streams tweets matching a word and serves it over a websocket to a page where a Google Map renders all new tweets with location.
 view the page on http://localhost:3000/ 
 you will need to register an API key for Google Maps, at https://console.developers.google.com, and paste this into the script URL.
 
 TODO: 
 
-* show tweet text on click / mouseover of map markers.
-* allow user to enter the search term on the page.
+* show tweet text on click / mouseover of map markers. - DONE
+* allow user to enter the search term on the page. - DONE
 * improve visual representation of many markers in same area.
 * reverse logic as discussed in previous example, which would allow multiple words, colour code the map markers according to which word found.
 * put this up on the web, with fixed term and map.
